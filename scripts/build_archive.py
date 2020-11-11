@@ -8,16 +8,16 @@ def replace_str_index(text,index=0,replacement=''):
     return '%s%s%s'%(text[:index],replacement,text[index+1:])
 
 ## Edit these paramters
-workspace = 'D:/DATA/NASA_DAILY/mrf-archive-2019'
-config = 'C:/PROJECTS/NASA/mdcs-py/Parameter/Config/gpm.xml'
-mastermd = 'C:/PROJECTS/NASA/mdcs-py/0MD/Master.gdb/GPM_2019'
-outputsrcFC = 'C:/PROJECTS/NASA/mdcs-py/0MD/inputtable.gdb/gpm_2019'
+workspace = '/data/sharedData/IMERGHHE/2019'#'//dannyk.esri.com/theShare/mrf-archive-2019'
+config = '/data/sharedData/mdcs-py/Parameter/Config/gpm.xml'#'C:/PROJECTS/NASA/mdcs-py/Parameter/Config/gpm.xml'
+mastermd = '/data/sharedData/mdcs-py/0MD/Master.gdb/GPM_2019'#'//dannyk.esri.com/theShare/mrf-archive-2019/Master.gdb/GPM_2019'
+outputsrcFC = '/data/sharedData/mdcs-py/0MD/inputtable.gdb/gpm_2019'#'//dannyk.esri.com/theShare/mrf-archive-2019/inputtable.gdb/gpm_2019'
 interval = '30'
 intervalunits = 'minutes'
 bucket = '#'
 infolder = '#'
 startslice = '0'
-endslice = '48'
+endslice = '47'
 
 total_start = datetime.datetime.now()
 
@@ -58,7 +58,7 @@ for dirpath, dirnames, filenames in walk:
                               '-c:buildSRCTable']) #+CM+RI+AR+SS+AI+SP
 
         finish = datetime.datetime.now()
-        print(f"finish: {finish}, runtime: {finish - start} ")
+        #print(f"finish: {finish}, runtime: {finish - start} ")
 
 MDCS.main(4,
               ['-i:' + config,
@@ -67,4 +67,4 @@ MDCS.main(4,
               '-c:CM+RI+AR+SS+AI+SP'])
 
 total_finish = datetime.datetime.now()
-print(f"finish: {total_finish}, runtime: {total_finish - total_start} ")
+#print(f"finish: {total_finish}, runtime: {total_finish - total_start} ")

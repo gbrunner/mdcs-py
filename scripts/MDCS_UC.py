@@ -197,7 +197,7 @@ class UserCode:
                         '    <Compression>LERC</Compression>\n' \
                         '    <DataType>Float32</DataType>\n' \
                         '    <DataValues NoData="-9999" />\n' \
-                        '    <DataFile>c:/mrfcache/gpm/{4}.mrf_cache</DataFile><IndexFile>c:/mrfcache/gpm/{4}.mrf_cache</IndexFile></Raster>\n'  \
+                        '    <DataFile>/data/sharedData/mrfcache/gpm/{4}.mrf_cache</DataFile><IndexFile>/data/sharedData/mrfcache/gpm/{4}.mrf_cache</IndexFile></Raster>\n'  \
                         '  <GeoTags>\n' \
                         '    <BoundingBox minx="-179.99999695" miny="-89.99999695" maxx="179.99999695" maxy=" 89.99999695" />\n' \
                         '    <Projection>{5}</Projection>\n' \
@@ -219,7 +219,7 @@ class UserCode:
                     '    <Compression>LERC</Compression>\n' \
                     '    <DataType>Float32</DataType>\n' \
                     '    <DataValues NoData="-9999" />\n' \
-                    '    <DataFile>c:/mrfcache/gpm/{2}.mrf_cache</DataFile><IndexFile>c:/mrfcache/gpm/{2}.mrf_cache</IndexFile></Raster>\n'  \
+                    '    <DataFile>/data/sharedData/mrfcache/gpm/{2}.mrf_cache</DataFile><IndexFile>/data/sharedData/mrfcache/gpm/{2}.mrf_cache</IndexFile></Raster>\n'  \
                     '  <GeoTags>\n' \
                     '    <BoundingBox minx="-179.99999695" miny="-89.99999695" maxx="179.99999695" maxy=" 89.99999695" />\n' \
                     '    <Projection>{3}</Projection>\n' \

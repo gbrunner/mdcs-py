@@ -128,7 +128,7 @@ class SetMDProperties(Base.Base):
                                                 if (each.lower() == 'none'):        # 'none' is an acceptable value.
                                                     rftpaths = rftpaths + each
                                                 else:
-                                                    rftpaths = rftpaths + os.path.abspath(os.path.join((self.m_base.const_raster_function_templates_path_), each))
+                                                    rftpaths = rftpaths + os.path.join((self.m_base.const_raster_function_templates_path_, each))
                                                 rftpaths += ';'
                                         ptvalue = rftpaths = rftpaths[:-1]
                                 self.dic_properties_lst[node.nodeName] = ptvalue
