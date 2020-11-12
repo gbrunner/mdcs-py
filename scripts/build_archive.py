@@ -17,7 +17,7 @@ intervalunits = 'minutes'
 bucket = '#'
 infolder = '#'
 startslice = '0'
-endslice = '47'
+endslice = '48'
 
 total_start = datetime.datetime.now()
 
@@ -64,7 +64,7 @@ MDCS.main(4,
               ['-i:' + config,
               '-m:' + mastermd,
               '-s:' + outputsrcFC,
-              '-c:CM+RI+AR+SS+AI+SP'])
+              '-c:CM+AR+SS+AI+SP']) #+RI
 
 total_finish = datetime.datetime.now()
 #print(f"finish: {total_finish}, runtime: {total_finish - total_start} ")
