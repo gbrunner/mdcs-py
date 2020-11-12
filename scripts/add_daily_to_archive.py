@@ -6,8 +6,8 @@ import os
 def main():
 
     ## Edit these paramters
-    #raster = sys.argv[1] #'D:/DATA/NASA_DAILY/mrf-archive-2019/2019/001/2019-001-z48.mrf'
-    raster = 'D:/DATA/NASA_DAILY/mrf-archive-2019/2019/001/2019-001-z48.mrf'
+    raster = sys.argv[1] #'D:/DATA/NASA_DAILY/mrf-archive-2019/2019/001/2019-001-z48.mrf'
+    #raster = 'D:/DATA/NASA_DAILY/mrf-archive-2019/2019/001/2019-001-z48.mrf'
     config = 'C:/PROJECTS/NASA/mdcs-py/Parameter/Config/gpm.xml'
     mastermd = 'C:/PROJECTS/NASA/gpm-newmdcs/0MD/Master.gdb/GPM_2019_001_z48'
     outputsrcFC = 'C:/PROJECTS/NASA/gpm-newmdcs/0MD/inputtable.gdb/gpm_2019_001_z48'
