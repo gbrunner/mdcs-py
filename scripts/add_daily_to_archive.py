@@ -2,6 +2,7 @@ import sys
 import datetime
 import MDCS
 import os
+import arcpy
 
 def main():
 
@@ -11,6 +12,7 @@ def main():
     config = 'C:/PROJECTS/NASA/mdcs-py/Parameter/Config/gpm.xml'
     mastermd = 'C:/PROJECTS/NASA/gpm-newmdcs/0MD/Master.gdb/GPM_2019_001_z48'
     outputsrcFC = 'C:/PROJECTS/NASA/gpm-newmdcs/0MD/inputtable.gdb/gpm_2019_001_z48'
+    outputsrcGDB = os.path.dirname(outputsrcFC)
     interval = '30'
     intervalunits = 'minutes'
     bucket = '#'
@@ -48,6 +50,8 @@ def main():
           '-m:' + mastermd,
           '-s:' + outputsrcFC,
           '-c:buildSRCTable+CM+RI+AR+SS+AI+SP'])
+
+    arcpy.Delete_management(outputsrcGDB)
 
 if __name__ == '__main__':
     main()

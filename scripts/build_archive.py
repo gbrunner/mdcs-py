@@ -12,6 +12,7 @@ workspace = '/data/sharedData/IMERGHHE/2019'#'//dannyk.esri.com/theShare/mrf-arc
 config = '/data/sharedData/mdcs-py/Parameter/Config/gpm.xml'#'C:/PROJECTS/NASA/mdcs-py/Parameter/Config/gpm.xml'
 mastermd = '/data/sharedData/mdcs-py/0MD/Master.gdb/GPM_2019'#'//dannyk.esri.com/theShare/mrf-archive-2019/Master.gdb/GPM_2019'
 outputsrcFC = '/data/sharedData/mdcs-py/0MD/inputtable.gdb/gpm_2019'#'//dannyk.esri.com/theShare/mrf-archive-2019/inputtable.gdb/gpm_2019'
+outputsrcGDB = os.path.dirname(outputsrcFC)
 interval = '30'
 intervalunits = 'minutes'
 bucket = '#'
@@ -65,6 +66,8 @@ MDCS.main(4,
               '-m:' + mastermd,
               '-s:' + outputsrcFC,
               '-c:CM+AR+SS+AI+SP']) #+RI
+
+arcpy.Delete_management(outputsrcGDB)
 
 total_finish = datetime.datetime.now()
 #print(f"finish: {total_finish}, runtime: {total_finish - total_start} ")
