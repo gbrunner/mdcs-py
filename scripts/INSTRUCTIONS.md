@@ -42,7 +42,7 @@ outputsrcFC = 'C:/PROJECTS/NASA/gpm-newmdcs/0MD/inputtable.gdb/gpm_2019'
 ## Delete the *inputtable.gdb* after every run
 The **inputtable.gdb** contains a feature class that is used to update the msoaic dataset. We want to insert only new records. Therefore, after every run, delete the **inputtable.gdb** using [**arcpy.Delete_management()](https://pro.arcgis.com/en/pro-app/tool-reference/data-management/delete.htm).
 
-Add the following lines to each python script: 
+Add the following lines to each python script, **build_archive.py** and **add_daily_to_archive.py**: 
 1. ```import arcpy```
-2. Define the source geodatabase: ```outputsrcGDB = 'C:/PROJECTS/NASA/gpm-newmdcs/0MD/inputtable.gdb'```
+2. Define the source geodatabase: ```outputsrcGDB = os.path.dirname(outputsrcFC)```
 3. At the end of the process, delete ```outputsrcGDB``` using: ```arcpy.Delete_management(outputsrcGDB)```
