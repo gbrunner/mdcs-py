@@ -38,3 +38,11 @@ outputsrcFC = 'C:/PROJECTS/NASA/gpm-newmdcs/0MD/inputtable.gdb/gpm_2019'
 4. Go to line 222: It will read:
 ```<DataFile>c:/mrfcache/gpm/{2}.mrf_cache</DataFile><IndexFile>c:/mrfcache/gpm/{2}.mrf_cache</IndexFile></Raster>\n'```
 5. Again, change **c:/mrfcache** to be a folder that exists on your system. We recommend that you create the **mrfcache** folder on your C, D, or Z drive.
+
+## Delete the *inputtable.gdb* after every run
+The **inputtable.gdb** contains a feature class that is used to update the msoaic dataset. We want to insert only new records. Therefore, after every run, delete the **inputtable.gdb** using [**arcpy.Delete_management()](https://pro.arcgis.com/en/pro-app/tool-reference/data-management/delete.htm).
+
+Add the following lines to each python script: 
+1. ```import arcpy```
+2. Define the source geodatabase: ```outputsrcGDB = 'C:/PROJECTS/NASA/gpm-newmdcs/0MD/inputtable.gdb'```
+3. At the end of the process, delete ```outputsrcGDB``` using: ```arcpy.Delete_management(outputsrcGDB)```
