@@ -46,3 +46,10 @@ Add the following lines to each python script, **build_archive.py** and **add_da
 1. ```import arcpy```
 2. Define the source geodatabase: ```outputsrcGDB = os.path.dirname(outputsrcFC)```
 3. At the end of the process, delete ```outputsrcGDB``` using: ```arcpy.Delete_management(outputsrcGDB)```
+
+
+## Helper scripts
+I have included two helper scripts to verify that MRF slides are being added to the mosaic and that the mosaic dataset properties are being updated.
+
+1. [print_table.py](https://github.com/gbrunner/mdcs-py/blob/master/scripts/print_table.py) prints the list of specified mosaic dataset MRF slice properties ('Name', 'Tag', 'StdTime') to the screen to verify the slices have been added to the mosaic.
+2. [check_mosaic_properties.py](https://github.com/gbrunner/mdcs-py/blob/master/scripts/check_mosaic_properties.py) checks that the properties of a mosaic have been updated.
