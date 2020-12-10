@@ -1,5 +1,5 @@
 {
- "serviceName": "GPM_2019",
+ "serviceName": "GPM_2019_Demo",
  "type": "ImageServer",
  "description": "GPM data for 2019",
  "capabilities": "Image,Metadata,Catalog,Mensuration",
@@ -56,7 +56,7 @@
   "maxDownloadImageCount": "50",
   "allowedMosaicMethods": "ByAttribute,Seamline,NorthWest,Center,LockRaster,Nadir,Viewpoint,None",
   "defaultCompressionTolerance": "0.01",
-  "availableFields": "Name,Tag,MinPS,MaxPS,LowPS,HighPS,ProductName,Dataset_ID,Variable,Dimensions,StandardTime,SyncDateTime",
+  "availableFields": "Name,Tag,MinPS,MaxPS,LowPS,HighPS,ProductName,Dataset_ID,Variable,Dimensions,StdTime,SyncDateTime",
   "supportsOwnershipBasedAccessControl": "false",
   "description": "GPM data for 2019",
   "esriImageServiceSourceType": "esriImageServiceSourceTypeMosaicDataset",
