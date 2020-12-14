@@ -69,4 +69,14 @@ I have included two helper scripts to verify that MRF slides are being added to 
   - "onlineResource": "https://ps0009281.esri.com:6443/arcgis/service/GPM_2019/ImageServer/WMSServer" of "typeName": "WMSServer" - Set this to be your server URL/arcgis/service/servicename/ImageServer/WMSServer
   
 ## Publish the image service through the ArcGIS Admin page
+Here, the ArcGIS Server I am using is **https://ps0009281.esri.com**. Please modify your URLs accordingly.
+
+1. Log into the ArcGIS Server Admin page: **https://ps0009281.esri.com:6443/arcgis/admin**.
+2. Click on **services**. It will take you to **/arcgis/admin/services**.
+3. Click on **createService** at the bottom of the page. It will take you to **arcgis/admin/services/createService**.
+4. In the text box, past your image service JSON that you cnofigured above.
+5. Change the format from **HTML** to **JSON**.
+6. Click the **Create** button.
+
+The service will publish. This could take a minute. My resulting service URL was **https://ps0009281.esri.com:6443/arcgis/rest/services/GPM_2019_Demo/ImageServer**.
 
