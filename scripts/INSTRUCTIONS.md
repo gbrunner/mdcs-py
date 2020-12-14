@@ -68,3 +68,5 @@ I have included two helper scripts to verify that MRF slides are being added to 
   -  "onlineResource": "https://ps0009281.esri.com:6443/arcgis/service/GPM_2019/ImageServer/WCSServer" of "typeName": "WCSServer" - Set this to be your server URL/arcgis/service/servicename/ImageServer/WCSServer
   - "onlineResource": "https://ps0009281.esri.com:6443/arcgis/service/GPM_2019/ImageServer/WMSServer" of "typeName": "WMSServer" - Set this to be your server URL/arcgis/service/servicename/ImageServer/WMSServer
   
+## Publish the image service through the ArcGIS Admin page
+
