@@ -2,7 +2,7 @@
  "serviceName": "GPM_2019_Demo",
  "type": "ImageServer",
  "description": "GPM data for 2019",
- "capabilities": "Image,Metadata,Catalog,Mensuration",
+ "capabilities": "Image,Pixels,Metadata,Catalog,Mensuration",
  "provider": "ArcObjects11",
  "clusterName": "default",
  "minInstancesPerNode": 1,
