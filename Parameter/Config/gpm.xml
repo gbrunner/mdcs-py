@@ -66,8 +66,8 @@
         <start_time_field>StdTime</start_time_field>
         <end_time_field>StdTime</end_time_field>
         <time_format>#</time_format>
-		<processing_templates>Z:\data\sharedData\mdcs-py\Parameter\RasterFunctionTemplates\GPM_Stretch_DRA.rft.xml</processing_templates>
-		<default_processing_template>GPM_Stretch_DRA.rft.xml</default_processing_template>
+		<processing_templates>GPM_Stats_0_50.rft.xml;GPM_Stretch_DRA.rft.xml;None</processing_templates>
+		<default_processing_template>None</default_processing_template>
         <geographic_transform>#</geographic_transform>
         <max_num_of_download_items>20</max_num_of_download_items>
         <max_num_of_records_returned>1000</max_num_of_records_returned>

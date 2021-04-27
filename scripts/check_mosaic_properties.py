@@ -1,7 +1,7 @@
 import arcpy
 
 #mosaic = r'C:\PROJECTS\NASA\gpm-newmdcs\0MD\Master.gdb\GPM_2019'  # input("Enter full path to an object : ")
-mosaic = '/data/sharedData/mdcs-py/0MD/Master.gdb/GPM_2019'
+mosaic = "C:/PROJECTS/NASA/0MD/Master.gdb/GPM_2019"#'/data/sharedData/mdcs-py/0MD/Master.gdb/GPM_2019'
 
 def scrapeMosaicMetadata(fq_path):
     descObj = arcpy.Describe(fq_path)
