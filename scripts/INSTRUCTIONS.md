@@ -53,3 +53,30 @@ I have included two helper scripts to verify that MRF slides are being added to 
 
 1. [print_table.py](https://github.com/gbrunner/mdcs-py/blob/master/scripts/print_table.py) prints the list of specified mosaic dataset MRF slice properties ('Name', 'Tag', 'StdTime') to the screen to verify the slices have been added to the mosaic.
 2. [check_mosaic_properties.py](https://github.com/gbrunner/mdcs-py/blob/master/scripts/check_mosaic_properties.py) checks that the properties of a mosaic have been updated.
+
+# Publishing an image service through the ArcGIS Admin page
+
+## Configure the image service JSON
+
+1. In the *scripts* folder, you will see a file name [**image_service.json**](https://github.com/gbrunner/mdcs-py/blob/master/scripts/image_service.json).
+2. Configure that file to work with your mosaic dataset and ArcGIS Server setup. Here are the following items you need to set or change in the JSON file:
+  - "serviceName": "GPM_2019_Demo" - Name the service whatever you would like.
+  - "description": "GPM data for 2019" - Give the service a better description than I have.
+  - "cacheDir": "/data/sharedData/directories/arcgiscache" - Find the **arcgiscache** on your system. Set this to be the "cacheDir".
+  - "path": "/data/sharedData/mdcs-py/0MD/Master.gdb/GPM_2019" - Set the "path" to be the path to your mosaic dataset.
+  - "outputDir": "/data/sharedData/directories/arcgisoutput" - Set "outputDir" to be the location of the **arcgisoutput** folder.
+  -  "onlineResource": "https://ps0009281.esri.com:6443/arcgis/service/GPM_2019/ImageServer/WCSServer" of "typeName": "WCSServer" - Set this to be your server URL/arcgis/service/servicename/ImageServer/WCSServer
+  - "onlineResource": "https://ps0009281.esri.com:6443/arcgis/service/GPM_2019/ImageServer/WMSServer" of "typeName": "WMSServer" - Set this to be your server URL/arcgis/service/servicename/ImageServer/WMSServer
+  
+## Publish the image service through the ArcGIS Admin page
+Here, the ArcGIS Server I am using is **https://ps0009281.esri.com**. Please modify your URLs accordingly.
+
+1. Log into the ArcGIS Server Admin page: **https://ps0009281.esri.com:6443/arcgis/admin**.
+2. Click on **services**. It will take you to **/arcgis/admin/services**.
+3. Click on **createService** at the bottom of the page. It will take you to **arcgis/admin/services/createService**.
+4. In the text box, past your image service JSON that you cnofigured above.
+5. Change the format from **HTML** to **JSON**.
+6. Click the **Create** button.
+
+The service will publish. This could take a minute. My resulting service URL was **https://ps0009281.esri.com:6443/arcgis/rest/services/GPM_2019_Demo/ImageServer**.
+
