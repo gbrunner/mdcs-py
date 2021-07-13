@@ -1,2 +1,2 @@
 <?xml version="1.0"?>
-<RasterStatistics xml:lang="en"><DatasetName>D_Landsat8_MS</DatasetName><Band Name="Band_1"><min>0</min><max>250</max><mean>4</mean><stddev>10</stddev></Band></RasterStatistics>
+<RasterStatistics xml:lang="en"><DatasetName>GPM Custom</DatasetName><Band Name="Band_1"><min>0</min><max>50</max><mean>5</mean><stddev>3</stddev></Band></RasterStatistics>

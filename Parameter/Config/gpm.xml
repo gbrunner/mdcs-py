@@ -15,7 +15,7 @@
 	<endslice>48;$eslice$</endslice>
   </CustomCommand>
   <Workspace>
-    <WorkspacePath>/data/shareData/mdcs-py/0MD</WorkspacePath>
+    <WorkspacePath>/arcgis-dev-mosaic-share/mdcs-py/0MD</WorkspacePath>
     <Geodatabase>Master.gdb</Geodatabase>
     <MosaicDataset>
       <MosaicDatasetType>Scientific</MosaicDatasetType>
@@ -165,6 +165,18 @@
           <input_featureclass>Boundary.gdb\Boundary_GCS</input_featureclass>
           <input_join_field>OBJECTID</input_join_field>
         </ImportGeometry>
+        <DefineMosaicDatasetNoData>
+          <num_bands>1</num_bands>
+          <bands_for_nodata_value>ALL_BANDS -9999.9</bands_for_nodata_value>
+          <!--<where_clause>where_clause</where_clause>-->
+          <bands_for_valid_data_range>ALL_BANDS 0.03 #</bands_for_valid_data_range>
+          <Composite_nodata_value>NO_COMPOSITE_NODATA</Composite_nodata_value>
+        </DefineMosaicDatasetNoData>
+        <BuildMultiDimensionalInfo>
+			<variable_field>Variable</variable_field>
+			<dimension_fields>StdTime # #</dimension_fields>
+			<variable_desc_units>precipitationCal # #</variable_desc_units>
+		</BuildMultiDimensionalInfo>
       </Processes>
     </MosaicDataset>
   </Workspace>

@@ -9,8 +9,8 @@ def replace_str_index(text,index=0,replacement=''):
 
 ## Edit these paramters
 workspace =r'D:\DATA\NASA_DAILY\mrf-archive-2019\2019'#'/arcgis-dev-mosaic-share/IMERGHHE/2019'#'//dannyk.esri.com/theShare/mrf-archive-2019'
-config = 'C:/PROJECTS/NASA/mdcs-py/Parameter/Config/gpm.xml'#'/arcgis-dev-mosaic-share/mdcs-py/Parameter/Config/gpm.xml'#'C:/PROJECTS/NASA/mdcs-py/Parameter/Config/gpm.xml'
-mastermd = r'C:\PROJECTS\NASA\mdcs-py\0MD\Master.gdb\GPM_2019'#'/arcgis-dev-mosaic-share/mdcs-py/0MD/Master.gdb/GPM_2019'#'//dannyk.esri.com/theShare/mrf-archive-2019/Master.gdb/GPM_2019'
+config = 'C:/PROJECTS/NASA/mdcs-py/Parameter/Config/gpm.xml' #'/arcgis-dev-mosaic-share/mdcs-py/Parameter/Config/gpm.xml'#
+mastermd = r'C:\PROJECTS\NASA\mdcs-py\0MD\Production.gdb\GPM_2019'#'/arcgis-dev-mosaic-share/mdcs-py/0MD/Master.gdb/GPM_2019'#'//dannyk.esri.com/theShare/mrf-archive-2019/Master.gdb/GPM_2019'
 outputsrcFC = r'C:\PROJECTS\NASA\mdcs-py\0MD\inputtable.gdb\gpm_2019'#'/arcgis-dev-mosaic-share/mdcs-py/0MD/inputtable.gdb/gpm_2019'#'//dannyk.esri.com/theShare/mrf-archive-2019/inputtable.gdb/gpm_2019'
 outputsrcGDB = os.path.dirname(outputsrcFC)
 interval = '30'

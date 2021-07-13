@@ -1,0 +1,204 @@
+{
+    "operationalLayers": [
+        {
+            "id": "GPM_2019_9622",
+            "layerType": "ArcGISImageServiceLayer",
+            "url": "https://ps0010786.esri.com/authoritative/rest/services/GPM_2019/ImageServer",
+            "visibility": true,
+            "opacity": 1,
+            "title": "GPM_2019",
+            "itemId": "5a687b8f2b6848b8b46e28f6f8f36499",
+            "renderingRule": {
+                "rasterFunction": "none"
+            },
+            "layerDefinition": {
+                "drawingInfo": {
+                    "renderer": {
+                        "type": "rasterStretch",
+                        "stretchType": "minMax",
+                        "colorRamp": {
+                            "type": "multipart",
+                            "colorRamps": [
+                                {
+                                    "type": "algorithmic",
+                                    "algorithm": "esriHSVAlgorithm",
+                                    "fromColor": [
+                                        175,
+                                        240,
+                                        233,
+                                        255
+                                    ],
+                                    "toColor": [
+                                        255,
+                                        255,
+                                        179,
+                                        255
+                                    ]
+                                },
+                                {
+                                    "type": "algorithmic",
+                                    "algorithm": "esriHSVAlgorithm",
+                                    "fromColor": [
+                                        255,
+                                        255,
+                                        179,
+                                        255
+                                    ],
+                                    "toColor": [
+                                        0,
+                                        128,
+                                        64,
+                                        255
+                                    ]
+                                },
+                                {
+                                    "type": "algorithmic",
+                                    "algorithm": "esriHSVAlgorithm",
+                                    "fromColor": [
+                                        0,
+                                        128,
+                                        64,
+                                        255
+                                    ],
+                                    "toColor": [
+                                        252,
+                                        186,
+                                        3,
+                                        255
+                                    ]
+                                },
+                                {
+                                    "type": "algorithmic",
+                                    "algorithm": "esriHSVAlgorithm",
+                                    "fromColor": [
+                                        252,
+                                        186,
+                                        3,
+                                        255
+                                    ],
+                                    "toColor": [
+                                        128,
+                                        0,
+                                        0,
+                                        255
+                                    ]
+                                },
+                                {
+                                    "type": "algorithmic",
+                                    "algorithm": "esriHSVAlgorithm",
+                                    "fromColor": [
+                                        120,
+                                        0,
+                                        0,
+                                        255
+                                    ],
+                                    "toColor": [
+                                        105,
+                                        48,
+                                        13,
+                                        255
+                                    ]
+                                },
+                                {
+                                    "type": "algorithmic",
+                                    "algorithm": "esriHSVAlgorithm",
+                                    "fromColor": [
+                                        105,
+                                        48,
+                                        13,
+                                        255
+                                    ],
+                                    "toColor": [
+                                        171,
+                                        171,
+                                        171,
+                                        255
+                                    ]
+                                },
+                                {
+                                    "type": "algorithmic",
+                                    "algorithm": "esriHSVAlgorithm",
+                                    "fromColor": [
+                                        171,
+                                        171,
+                                        171,
+                                        255
+                                    ],
+                                    "toColor": [
+                                        255,
+                                        252,
+                                        255,
+                                        255
+                                    ]
+                                }
+                            ]
+                        },
+                        "min": null,
+                        "max": null,
+                        "numberOfStandardDeviations": null,
+                        "statistics": [
+                            [
+                                0,
+                                50,
+                                4,
+                                10
+                            ]
+                        ],
+                        "dra": false,
+                        "minPercent": null,
+                        "maxPercent": null,
+                        "useGamma": true,
+                        "gamma": [
+                            1
+                        ],
+                        "computeGamma": false,
+                        "sigmoidStrengthLevel": null
+                    }
+                }
+            }
+        }
+    ],
+    "baseMap": {
+        "baseMapLayers": [
+            {
+                "id": "World_Hillshade_3805",
+                "layerType": "ArcGISTiledMapServiceLayer",
+                "url": "https://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer",
+                "visibility": true,
+                "opacity": 1,
+                "title": "World Hillshade"
+            },
+            {
+                "id": "VectorTile_2333",
+                "type": "VectorTileLayer",
+                "layerType": "VectorTileLayer",
+                "title": "World Topographic Map",
+                "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/7dc6cea0b1764a1f9af2e679f642f0f5/resources/styles/root.json",
+                "visibility": true,
+                "opacity": 1
+            }
+        ],
+        "title": "Topographic"
+    },
+    "spatialReference": {
+        "wkid": 102100,
+        "latestWkid": 3857
+    },
+    "widgets": {
+        "timeSlider": {
+            "properties": {
+                "startTime": 1546300800000,
+                "endTime": 1558567860000,
+                "thumbCount": 2,
+                "thumbMovingRate": 2000,
+                "timeStopInterval": {
+                    "interval": 2,
+                    "units": "esriTimeUnitsWeeks"
+                }
+            }
+        }
+    },
+    "authoringApp": "WebMapViewer",
+    "authoringAppVersion": "10.8.1",
+    "version": "2.16"
+}

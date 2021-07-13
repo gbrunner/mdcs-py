@@ -1,5 +1,5 @@
 {
- "serviceName": "GPM_2019_Demo",
+ "serviceName": "GPM_2019",
  "type": "ImageServer",
  "description": "GPM data for 2019",
  "capabilities": "Image,Metadata,Pixels,Catalog,Mensuration",
@@ -24,7 +24,7 @@
  "allowedUploadFileTypes": "",
  "properties": {
   "copyright": "None",
-  "cacheDir": "/data/sharedData/directories/arcgiscache",
+  "cacheDir": "/arcgis-dev-mosaic-share/directories/arcgiscache",
   "dynamicImageWorkspace": "",
   "maxImageWidth": "4000",
   "rasterFunctions": "",
@@ -37,7 +37,7 @@
   "hasValidSR": "true",
   "availableMensurationCapabilities": "Basic,Base-Top Height,Base-Top Shadow Height,Top-Top Shadow Height,3D",
   "maxImageHeight": "4000",
-  "path": "/data/sharedData/mdcs-py/0MD/Master.gdb/GPM_2019",
+  "path": "/arcgis-dev-mosaic-share/mdcs-py/0MD/Master.gdb/GPM_2019",
   "allowOthersToUpdate": "false",
   "allowOthersToDelete": "false",
   "maxInstances": "2",
@@ -69,7 +69,7 @@
   "defaultResamplingMethod": "1",
   "minScale": "36111.909643",
   "rasterTypes": "Raster Dataset",
-  "outputDir": "/data/sharedData/directories/arcgisoutput",
+  "outputDir": "/arcgis-dev-mosaic-share/directories/arcgisoutput",
   "minInstances": "1",
   "capabilities": "",
   "maxScale": "1128.497176",
